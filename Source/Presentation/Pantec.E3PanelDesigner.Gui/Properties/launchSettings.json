@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Pantec.E3PanelDesigner": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

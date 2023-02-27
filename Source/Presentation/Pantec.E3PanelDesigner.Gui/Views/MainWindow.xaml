@@ -1,0 +1,88 @@
+﻿<Window x:Class="Pantec.E3PanelDesigner.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:converters="clr-namespace:Pantec.E3PanelDesigner.Converters" 
+        xmlns:viewModels="clr-namespace:Pantec.E3PanelDesigner.ViewModels"
+        mc:Ignorable="d"
+        Title="Pantec - E3 PanelDesigner"
+        Height="350" Width="525"
+        WindowStartupLocation="CenterScreen"
+        d:DataContext="{d:DesignInstance viewModels:MainViewModel}" Closed="Window_Closed">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFDADADA"/>
+            <GradientStop Color="#FF00999C" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <Expander Header="Connect to E3.series"
+                      IsExpanded="True">
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Connect\Disconnect E3.series COM"
+                           Margin="20 2 2 2" />
+                    <StackPanel Orientation="Horizontal"
+                                Margin="40 2 2 2">
+                        <Button Content="Connect"
+                                MinWidth="100"
+                                Command="{Binding Path=ConnectApplicationCommand}" />
+                        <Button Content="Disconnect"
+                                Margin="2 0 0 0"
+                                MinWidth="100"
+                                Command="{Binding Path=DisconnectApplicationCommand}" />
+                    </StackPanel>
+                </StackPanel>
+            </Expander>
+            <Expander Header="Connect to project"
+                      IsExpanded="True"
+                      Visibility="{Binding IsConnected, Converter={converters:BoolToVisibilityConverter}}">
+                <StackPanel Orientation="Vertical"
+                            IsEnabled="{Binding Path=IsConnected, Mode=OneWay}">
+                    <Label Content="No opened project"
+                           Margin="20 2 2 2"
+                           Visibility="{Binding Path=IsProjectOpened, Converter={converters:BoolToVisibilityConverter TrueValue=Collapsed, FalseValue=Visible}}" />
+                    <Label Content="Get Project Info"
+                           Margin="20 2 2 2"
+                           IsEnabled="{Binding IsProjectOpened}" />
+                    <Button Content="Get"
+                            Margin="40 2 2 2"
+                            MinWidth="100"
+                            HorizontalAlignment="Left"
+                            Command="{Binding Path=GetJobInfoCommand}" />
+                    <Grid Margin="40 2 2 2"
+                          Visibility="{Binding Path=IsProjectOpened, Converter={converters:BoolToVisibilityConverter}}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Content="Name: "/>
+                        <Label Grid.Column="1"
+                               Grid.Row="0"
+                               Content="{Binding ProjectName}"/>
+                        <Label Grid.Row="2" Grid.Column="0" Content="All Devices:"/>
+                        <ListBox x:Name="lstBox_AllDevicesName" SelectedItem="SelectedDeviceName" Grid.Row="2" Grid.Column="2" Height="92" Width="Auto" Margin="2" ItemsSource="{Binding AllDevicesInProject}" ScrollViewer.VerticalScrollBarVisibility="Visible">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel>
+                                        <TextBlock Text="{Binding}" TextAlignment="Left" VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </Grid>
+
+
+                </StackPanel>
+            </Expander>
+        </StackPanel>
+    </Grid>
+
+</Window>

@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Pantec.E3Proxy.Abstract.E3ProxyBase" Collapsed="true">
+    <Position X="52.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACgAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstract\E3ProxyBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Proxy.Extensions.E3ArraysExtensions">
+    <Position X="106" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Extensions\E3ArraysExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3ApplicationProxy" Collapsed="true">
+    <Position X="42.75" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>RFEiRMzHFtDl7njG7hQCfddGwEkdeemYPntkC0oC75Y=</HashCode>
+      <FileName>E3ApplicationProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3AttributeDefinitionProxy" Collapsed="true">
+    <Position X="58.5" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAIABAAAAEgAAAAAECAEAAAAABQAIgBEA=</HashCode>
+      <FileName>E3AttributeDefinitionProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3AttributeProxy" Collapsed="true">
+    <Position X="74.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQQAAIAAAIgACIAAEgAAAAAEAIKAAAgGAAAIABEA=</HashCode>
+      <FileName>E3AttributeProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3BinDataProxy" Collapsed="true">
+    <Position X="90" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>E3BinDataProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3BoardProxy" Collapsed="true">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAgAAgAgEAAAAAAAAIABAA=</HashCode>
+      <FileName>E3BoardProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3BundleProxy" Collapsed="true">
+    <Position X="15.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CBAYAAKQABAB4BYgABAMCBCCBAMAEGAkMBgAQIYAREE=</HashCode>
+      <FileName>E3BundleProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3CavityPartProxy" Collapsed="true">
+    <Position X="29.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAIIAAIwAAEBAMAAAAAACAAGAgAAAAAAIAAEE=</HashCode>
+      <FileName>E3CavityPartProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3ClipboardProxy" Collapsed="true">
+    <Position X="45" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAIAAAAAEEABAAAAEAAAAAAAAAAAYAxEA=</HashCode>
+      <FileName>E3ClipboardProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3CloneInterfaceProxy" Collapsed="true">
+    <Position X="60.75" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>RFGiRMzHN9Ll7ljG7hQqfddGwEkdeemYfntkC0pC75Y=</HashCode>
+      <FileName>E3CloneInterfaceProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3ComponentProxy" Collapsed="true">
+    <Position X="76.5" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAYDAgIBAMAAABAAAQgAAgkIAAIAIghEE=</HashCode>
+      <FileName>E3ComponentProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3ConnectionProxy" Collapsed="true">
+    <Position X="92.25" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>CgAAEAAgAAAA8HMgIBgICBAAASoAAEAgEgwAgAKADAE=</HashCode>
+      <FileName>E3ConnectionProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3ConnectLineProxy" Collapsed="true">
+    <Position X="4.5" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAIAAAABgEAAAAAAAAAAAAAAAAAAIAAEA=</HashCode>
+      <FileName>E3ConnectLineProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3DeviceProxy" Collapsed="true">
+    <Position X="18" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>q1/NXC8fKviv7f47hv0fnFYDZrd3Zf03X/5r/sZkddU=</HashCode>
+      <FileName>E3DeviceProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3DimensionProxy" Collapsed="true">
+    <Position X="31.5" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>MAAIAzAAAgBAYLw4gJmdABCJAbEIAEClARICoEIABkE=</HashCode>
+      <FileName>E3DimensionProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3DllInterfaceProxy" Collapsed="true">
+    <Position X="47.25" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAwACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>E3DllInterfaceProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3EmbeddedObjectProxy" Collapsed="true">
+    <Position X="63" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAIAAAAAAEAAAAAAEAAEAAAAAAAAMAAEA=</HashCode>
+      <FileName>E3EmbeddedObjectProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3ExternalDocumentProxy" Collapsed="true">
+    <Position X="78.75" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIACEICIdhAwABAMhYAAAAEIAEApEgAEQAYgREE=</HashCode>
+      <FileName>E3ExternalDocumentProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3FieldProxy" Collapsed="true">
+    <Position X="94.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CBEAAAJAAgCAYDAgIBEOKAGgAEEAIAEgAnABVgYYREM=</HashCode>
+      <FileName>E3FieldProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3FunctionalPortProxy" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQQAAAAAIIAAAgAEAAABERGQAEAIAAQiwAZAHEA=</HashCode>
+      <FileName>E3FunctionalPortProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3FunctionalUnitProxy" Collapsed="true">
+    <Position X="20.25" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ACEAAAAAAAAAYBAgABAMAAAAQAEAAEEgAAAAQAIABEE=</HashCode>
+      <FileName>E3FunctionalUnitProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3GraphProxy" Collapsed="true">
+    <Position X="33.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IQEIQqAAKkAAYDA4AZCfhTCpAbEZIQkgIGACJMPYAhc=</HashCode>
+      <FileName>E3GraphProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3GroupProxy" Collapsed="true">
+    <Position X="49.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAACAUAAYDAhARAOABAAAAEEAmCgAEACYIIgBEE=</HashCode>
+      <FileName>E3GroupProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3InfoApplicationProxy" Collapsed="true">
+    <Position X="65.25" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>E3InfoApplicationProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3JobProxy" Collapsed="true">
+    <Position X="81" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/f//////////////////f/7/7///9///f///7///1/s=</HashCode>
+      <FileName>E3JobProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3LayerProxy" Collapsed="true">
+    <Position X="96.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAACAIAAAAAAAAAAAAAAAAEAAAAAAAAIABAA=</HashCode>
+      <FileName>E3LayerProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3ModulePortProxy" Collapsed="true">
+    <Position X="9" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAIAAgAAAEAABAQAAAAAAAABAAQAYARkA=</HashCode>
+      <FileName>E3ModulePortProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3ModuleProxy" Collapsed="true">
+    <Position X="22.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEEAAAAAAAAAYBAgABAMAAABRAgAAAAgAAAAQBIgBEE=</HashCode>
+      <FileName>E3ModuleProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3NetProxy" Collapsed="true">
+    <Position X="36" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEA4HIiIBAMAAAAACAAAAAoEAwAgAYITEE=</HashCode>
+      <FileName>E3NetProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3NetSegmentProxy" Collapsed="true">
+    <Position X="51.75" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAENEAIgIICA4HAgBRCeiIBBAYlAiEokABwMhAJQHkE=</HashCode>
+      <FileName>E3NetSegmentProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3OptionProxy" Collapsed="true">
+    <Position X="67.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ADoEQAgEAABEYBJgMJAejACBAHmIKEFsEDAARAYxxEE=</HashCode>
+      <FileName>E3OptionProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3OutlineProxy" Collapsed="true">
+    <Position X="83.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAACAgIAAAAAAEAQBAAAACAAEAABAEMApABEA=</HashCode>
+      <FileName>E3OutlineProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3PinProxy" Collapsed="true">
+    <Position X="99" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IRPT2u37Jb8PbfPqBpN/P7ojvz2CudW8GlzS9dY4X+E=</HashCode>
+      <FileName>E3PinProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3SheetProxy" Collapsed="true">
+    <Position X="11.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iDAC6MPCGpCAd3ow0JMOpa9gQ8sYsUSpFhAkzJ+iTeE=</HashCode>
+      <FileName>E3SheetProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3SignalClassProxy" Collapsed="true">
+    <Position X="24.75" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAA4BAgAFAMAAAAAAEBAEAgAAACQAYgREE=</HashCode>
+      <FileName>E3SignalClassProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3SignalProxy" Collapsed="true">
+    <Position X="38.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACABAQIAIAD4HIgABAMCAEABAoBAFAgEAgAQAYgREE=</HashCode>
+      <FileName>E3SignalProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3SlotProxy" Collapsed="true">
+    <Position X="54" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACCoIAAAAAAEAAEAAAAAQAAAAAACAAIABEA=</HashCode>
+      <FileName>E3SlotProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3StateProxy" Collapsed="true">
+    <Position X="69.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAABAYBAAIgAEAAAAAAAAAAAAAAAAAAYAREE=</HashCode>
+      <FileName>E3StateProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3StructureNodeProxy" Collapsed="true">
+    <Position X="85.5" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AIGASAACAJAAYBAgABAMiAAAAAkIIEkhABAAQAYoREE=</HashCode>
+      <FileName>E3StructureNodeProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3SupplyProxy" Collapsed="true">
+    <Position X="101.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEAAAAAAAAoAAAAAAEQAAAAgEAAEEAMAgAQAIgBEA=</HashCode>
+      <FileName>E3SupplyProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3SymbolProxy" Collapsed="true">
+    <Position X="13.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASMTi2IpEmCIYDJpLDf/JPelTwu2oQc0P/PJdpbEBEU=</HashCode>
+      <FileName>E3SymbolProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3TestpointProxy" Collapsed="true">
+    <Position X="27" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAA4DAgABAMgAAAAAEAAEAgAAAAQAIgBEE=</HashCode>
+      <FileName>E3TestpointProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3TextProxy" Collapsed="true">
+    <Position X="40.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QsACoAwAKACBYjAoILAfIIBBIZWIEI0oQkAQJMISAEc=</HashCode>
+      <FileName>E3TextProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3TreeProxy" Collapsed="true">
+    <Position X="56.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AUoAEBCAAADCMkAIECAABAAAAAMAoHAgCEGAQCIABAA=</HashCode>
+      <FileName>E3TreeProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3UserMenuItemProxy" Collapsed="true">
+    <Position X="72" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>JAACAQABBAAIKAAIIIAKABUQUAEAAMEAgIAEgUJACAA=</HashCode>
+      <FileName>E3UserMenuItemProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3VariantProxy" Collapsed="true">
+    <Position X="87.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAEAAEAAAAAAEAAEAAAAAAQAYgREA=</HashCode>
+      <FileName>E3VariantProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Proxy.E3WespeProxy" Collapsed="true">
+    <Position X="103.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CBEAAABgAAEAIAIAAAAKAAAAAoAAEAIiICQAQAIwCAA=</HashCode>
+      <FileName>E3WespeProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Pantec.E3Proxy.Interfaces.IAttributed" Collapsed="true">
+    <Position X="106" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQBAgABAIAAAAAAAAAAAgAAAAAAAAAAE=</HashCode>
+      <FileName>Interfaces\IAttributed.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

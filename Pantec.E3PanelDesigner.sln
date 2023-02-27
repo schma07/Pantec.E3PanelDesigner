@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{9ED53DA0-1149-4D3A-A2EC-04082476AF5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{96112E64-1665-4BE9-AEDF-2BFDC3BFB0F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{D9D29E9E-C418-4322-9114-218D03270936}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pantec.E3Wrapper.ApplicationSelection.Gui", "Source\Presentation\Pantec.E3ApplicationSelection.Gui\Pantec.E3Wrapper.ApplicationSelection.Gui.csproj", "{12B6C159-7A1F-43EA-A4A0-822F83AF4962}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pantec.E3Wrapper.Core.Application", "Source\Core\Pantec.E3Wrapper.Core.Application\Pantec.E3Wrapper.Core.Application.csproj", "{840818BE-5AD7-40DF-BF7A-8B90EB4F21C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{23104413-48A4-434C-9D88-A78C5583F962}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pantec.E3Wrapper.Core.Domain", "Source\Core\Pantec.E3Wrapper.Core.Domain\Pantec.E3Wrapper.Core.Domain.csproj", "{2D71CBA4-AD63-46C5-8218-21124E2AC74E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{CE8FF3E4-5D85-41C3-ACE6-BB9B1589D36F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pantec.E3Wrapper.Infrastructure", "Source\Infrastructure\Pantec.E3Wrapper.Infrastructure\Pantec.E3Wrapper.Infrastructure.csproj", "{4719DE1D-3B71-4B4E-929C-518864FE5D08}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pantec.E3Proxy", "Source\Common\Pantec.E3Proxy\Pantec.E3Proxy.csproj", "{969C5A6E-606D-44B1-BC05-18CDAA34F6E8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pantec.E3PanelDesigner", "Source\Presentation\Pantec.E3PanelDesigner.Gui\Pantec.E3PanelDesigner.csproj", "{2FAA5EB3-C9C7-4176-9BEF-7F47E347C426}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12B6C159-7A1F-43EA-A4A0-822F83AF4962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12B6C159-7A1F-43EA-A4A0-822F83AF4962}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12B6C159-7A1F-43EA-A4A0-822F83AF4962}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12B6C159-7A1F-43EA-A4A0-822F83AF4962}.Release|Any CPU.Build.0 = Release|Any CPU
+		{840818BE-5AD7-40DF-BF7A-8B90EB4F21C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{840818BE-5AD7-40DF-BF7A-8B90EB4F21C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{840818BE-5AD7-40DF-BF7A-8B90EB4F21C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{840818BE-5AD7-40DF-BF7A-8B90EB4F21C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D71CBA4-AD63-46C5-8218-21124E2AC74E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D71CBA4-AD63-46C5-8218-21124E2AC74E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D71CBA4-AD63-46C5-8218-21124E2AC74E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D71CBA4-AD63-46C5-8218-21124E2AC74E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4719DE1D-3B71-4B4E-929C-518864FE5D08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4719DE1D-3B71-4B4E-929C-518864FE5D08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4719DE1D-3B71-4B4E-929C-518864FE5D08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4719DE1D-3B71-4B4E-929C-518864FE5D08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{969C5A6E-606D-44B1-BC05-18CDAA34F6E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{969C5A6E-606D-44B1-BC05-18CDAA34F6E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{969C5A6E-606D-44B1-BC05-18CDAA34F6E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{969C5A6E-606D-44B1-BC05-18CDAA34F6E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FAA5EB3-C9C7-4176-9BEF-7F47E347C426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FAA5EB3-C9C7-4176-9BEF-7F47E347C426}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FAA5EB3-C9C7-4176-9BEF-7F47E347C426}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FAA5EB3-C9C7-4176-9BEF-7F47E347C426}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9ED53DA0-1149-4D3A-A2EC-04082476AF5D} = {23104413-48A4-434C-9D88-A78C5583F962}
+		{96112E64-1665-4BE9-AEDF-2BFDC3BFB0F7} = {23104413-48A4-434C-9D88-A78C5583F962}
+		{D9D29E9E-C418-4322-9114-218D03270936} = {23104413-48A4-434C-9D88-A78C5583F962}
+		{12B6C159-7A1F-43EA-A4A0-822F83AF4962} = {9ED53DA0-1149-4D3A-A2EC-04082476AF5D}
+		{840818BE-5AD7-40DF-BF7A-8B90EB4F21C0} = {D9D29E9E-C418-4322-9114-218D03270936}
+		{2D71CBA4-AD63-46C5-8218-21124E2AC74E} = {D9D29E9E-C418-4322-9114-218D03270936}
+		{CE8FF3E4-5D85-41C3-ACE6-BB9B1589D36F} = {23104413-48A4-434C-9D88-A78C5583F962}
+		{4719DE1D-3B71-4B4E-929C-518864FE5D08} = {96112E64-1665-4BE9-AEDF-2BFDC3BFB0F7}
+		{969C5A6E-606D-44B1-BC05-18CDAA34F6E8} = {CE8FF3E4-5D85-41C3-ACE6-BB9B1589D36F}
+		{2FAA5EB3-C9C7-4176-9BEF-7F47E347C426} = {9ED53DA0-1149-4D3A-A2EC-04082476AF5D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A56466AF-A3B3-4E6D-B788-995DA3F6D836}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="E3DbeApplicationProxy.cs" />
+    <Compile Remove="E3DbeAttributeProxy.cs" />
+    <Compile Remove="E3DbeBridgeProxy.cs" />
+    <Compile Remove="E3DbeComponentProxy.cs" />
+    <Compile Remove="E3DbeGraphProxy.cs" />
+    <Compile Remove="E3DbeModelPinProxy.cs" />
+    <Compile Remove="E3DbeModelProxy.cs" />
+    <Compile Remove="E3DbeNodeProxy.cs" />
+    <Compile Remove="E3DbeSymbolProxy.cs" />
+    <Compile Remove="E3DbeTextProxy.cs" />
+  </ItemGroup>
+
+</Project>

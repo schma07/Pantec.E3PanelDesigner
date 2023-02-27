@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Pantec.E3Wrapper.ApplicationSelection.Gui.Commands.RelayCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAQAAEAABAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\RelayCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.ApplicationSelection.Gui.Interop.WindowsAPI" Collapsed="true">
+    <Position X="11.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAIAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interop\WindowsApi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Wrapper.ApplicationSelection.Gui.Models.RunningApplication" Collapsed="true">
+    <Position X="13.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAgAAACAAAAEAAAAA=</HashCode>
+      <FileName>Models\RunningE3Application.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Wrapper.ApplicationSelection.Gui.ViewModels.Base.ViewModelBase&lt;TViewType&gt;" Collapsed="true">
+    <Position X="7.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAgAABAAAAACAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\Base\ViewModelBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.ApplicationSelection.Gui.ViewModels.SelectionViewModel" Collapsed="true">
+    <Position X="7.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAACAAAAAAAAAAAAEAAAEAAAAJAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\SelectionViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.ApplicationSelection.Gui.Views.SelectionWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\SelectionWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.ApplicationSelection.Gui.E3ApplicationConnector" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>E3ApplicationConnector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Pantec.E3Wrapper.ApplicationSelection.Gui.Views.Interfaces.IDialogView" Collapsed="true">
+    <Position X="9.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Views\Interfaces\IDialogView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

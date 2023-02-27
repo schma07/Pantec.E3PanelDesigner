@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.Base.ProxyWrapperBase&lt;T&gt;" Collapsed="true">
+    <Position X="41.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAACCgEAAAAAgIAQAAAAAAAAEEAAAQAAAAAAAA=</HashCode>
+      <FileName>Entities\Base\ProxyWrapperBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.Extensions.E3DeviceExtensions" Collapsed="true">
+    <Position X="87" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAACAAACAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Entities\Extensions\E3DeviceExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.Extensions.E3FieldExtensions" Collapsed="true">
+    <Position X="88.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBA=</HashCode>
+      <FileName>Entities\Extensions\E3FieldExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.Extensions.E3JobExtensions" Collapsed="true">
+    <Position X="83.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Extensions\E3JobExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.Extensions.E3NetSegmentExtensions" Collapsed="true">
+    <Position X="85.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Extensions\E3NetSegmentExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.Extensions.E3ObjectExtensions" Collapsed="true">
+    <Position X="87" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Entities\Extensions\E3ObjectExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.Extensions.E3PinExtensions" Collapsed="true">
+    <Position X="88.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBA=</HashCode>
+      <FileName>Entities\Extensions\E3PinExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.Extensions.E3ProxyAttributedExtensions" Collapsed="true">
+    <Position X="83.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Extensions\E3ProxyAttributedExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.Extensions.E3SymbolExtensions" Collapsed="true">
+    <Position X="85.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBA=</HashCode>
+      <FileName>Entities\Extensions\E3SymbolExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.Extensions.E3TextExtensions" Collapsed="true">
+    <Position X="87" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBA=</HashCode>
+      <FileName>Entities\Extensions\E3TextExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.Extensions.E3TreeExtensions" Collapsed="true">
+    <Position X="88.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Extensions\E3TreeExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.Extensions.EntityExtensions" Collapsed="true">
+    <Position X="83.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAgAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Extensions\EntityExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.Extensions.StringExtensions" Collapsed="true">
+    <Position X="85.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Entities\Extensions\StringExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3Application" Collapsed="true">
+    <Position X="49.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAACQAAAAAAAAAAAAAAAEAABAA=</HashCode>
+      <FileName>Entities\E3Application.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3Attribute" Collapsed="true">
+    <Position X="60.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAIAAAAAAAgCAAAAAAAAAAAAAACAIABAA=</HashCode>
+      <FileName>Entities\E3Attribute.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3BinData" Collapsed="true">
+    <Position X="72" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\E3BinData.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3Board" Collapsed="true">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAACAIABAA=</HashCode>
+      <FileName>Entities\E3Board.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3Bundle" Collapsed="true">
+    <Position X="13.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAYBAAABAIAAQAABAAAAAAAAAASAIABAE=</HashCode>
+      <FileName>Entities\E3Bundle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3Component" Collapsed="true">
+    <Position X="22.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAYBAAABAIAAAAABAAAAAAAAAACAIABAE=</HashCode>
+      <FileName>Entities\E3Component.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3Connection" Collapsed="true">
+    <Position X="31.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAYBAAABAIAAAAABAAAAAAAAAACAIABAE=</HashCode>
+      <FileName>Entities\E3Connection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3ConnectLine" Collapsed="true">
+    <Position X="40.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAACAIAAAA=</HashCode>
+      <FileName>Entities\E3ConnectLine.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3Device" Collapsed="true">
+    <Position X="51.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAIAAAAAYBAAABAICAQABhBAAAAAABAASAJABAE=</HashCode>
+      <FileName>Entities\E3Device.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3Dimension" Collapsed="true">
+    <Position X="63" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAYBAAABAIAAAAABAAAAAAAAAACAIAAAE=</HashCode>
+      <FileName>Entities\E3Dimension.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3ExternalDocument" Collapsed="true">
+    <Position X="74.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAYBAAABAIAAQAABAAAAAAAAAASAIABAE=</HashCode>
+      <FileName>Entities\E3ExternalDocument.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3Field" Collapsed="true">
+    <Position X="4.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAYBAAABAIAAQAABAAAAAAAAAASAIABBE=</HashCode>
+      <FileName>Entities\E3Field.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3FunctionalPort" Collapsed="true">
+    <Position X="15.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAIAAAAAAAAAQAAAAAAAAAAAAASAIABAA=</HashCode>
+      <FileName>Entities\E3FunctionalPort.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3FunctionalUnit" Collapsed="true">
+    <Position X="24.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAYBAAABAIAAQAABAAAAAAAAAASAIABAE=</HashCode>
+      <FileName>Entities\E3FunctionalUnit.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3Graph" Collapsed="true">
+    <Position X="33.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAYBAAABAIAAAAABAAAAAAAAAACAIAAAE=</HashCode>
+      <FileName>Entities\E3Graph.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3Group" Collapsed="true">
+    <Position X="42.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAYBAAABAIAAQAABAAAAAAAAAASAIABAE=</HashCode>
+      <FileName>Entities\E3Group.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3Job" Collapsed="true">
+    <Position X="54" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAgMAwQIJEQQBEGBREIAACDABBAAoKAJEiQAgEIBAE=</HashCode>
+      <FileName>Entities\E3Job.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3Layer" Collapsed="true">
+    <Position X="65.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAACAIABAA=</HashCode>
+      <FileName>Entities\E3Layer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3Module" Collapsed="true">
+    <Position X="76.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAYBAAABAIAAQAABAAAAAAAAAASAIABAE=</HashCode>
+      <FileName>Entities\E3Module.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3ModulePort" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAIAAAAAAAAAQAAAAAAAAAAAAASAIABAA=</HashCode>
+      <FileName>Entities\E3ModulePort.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3Net" Collapsed="true">
+    <Position X="18" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAYBAAABAIAAAAABAAAAAgAAAACAIABAE=</HashCode>
+      <FileName>Entities\E3Net.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3NetSegment" Collapsed="true">
+    <Position X="27" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgCCAAAAAAAYBAAABAIAAAAABAAAAAAAAAACAIABAE=</HashCode>
+      <FileName>Entities\E3NetSegment.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3Option" Collapsed="true">
+    <Position X="36" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAYBAAABAIAAQAABAAAAAAAAAASAIABAE=</HashCode>
+      <FileName>Entities\E3Option.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3Outline" Collapsed="true">
+    <Position X="45" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAACAIABAA=</HashCode>
+      <FileName>Entities\E3Outline.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3Pin" Collapsed="true">
+    <Position X="56.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIACCAAAABABYBAAABAIAAQAABAAAAAAAAAASAIABBE=</HashCode>
+      <FileName>Entities\E3Pin.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3Sheet" Collapsed="true">
+    <Position X="67.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAZBAAABAIAIQAABAAAAAAAAAASAIABAE=</HashCode>
+      <FileName>Entities\E3Sheet.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3Signal" Collapsed="true">
+    <Position X="78.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAYBAAABAIAAQAABAAAAAAAAAASAIgBAE=</HashCode>
+      <FileName>Entities\E3Signal.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3SignalClass" Collapsed="true">
+    <Position X="9" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAYBAAABAIAAQAABAAAAAAAAAASAIABAE=</HashCode>
+      <FileName>Entities\E3SignalClass.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3Slot" Collapsed="true">
+    <Position X="20.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAACAIABAA=</HashCode>
+      <FileName>Entities\E3Slot.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3StructureNode" Collapsed="true">
+    <Position X="29.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAYBAAABAIAAQAABAAAAAAAAAASAIABAE=</HashCode>
+      <FileName>Entities\E3StructureNode.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3Supply" Collapsed="true">
+    <Position X="38.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAIAAAAAAAAAQAAAAAAAAAAAAASAIABAA=</HashCode>
+      <FileName>Entities\E3Supply.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3Symbol" Collapsed="true">
+    <Position X="47.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAYBAAABAIAAQAABAAAAAAAAAASAIABBE=</HashCode>
+      <FileName>Entities\E3Symbol.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3Testpoint" Collapsed="true">
+    <Position X="58.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAYBAAABAIAAQAABAAAAAAAAAASAIABAE=</HashCode>
+      <FileName>Entities\E3Testpoint.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3Text" Collapsed="true">
+    <Position X="69.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAYBAAARAIAAAAABAAAAAAAAAACAIABBE=</HashCode>
+      <FileName>Entities\E3Text.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3Tree" Collapsed="true">
+    <Position X="81" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAYAAAAAAAAAQAAAAAAAAAAAAASAIABAA=</HashCode>
+      <FileName>Entities\E3Tree.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Entities.E3Variant" Collapsed="true">
+    <Position X="11.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAIAAAAAAAAAQAAAAAAAAAAAAASAIABAA=</HashCode>
+      <FileName>Entities\E3Variant.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Extensions.StringExtensions" Collapsed="true">
+    <Position X="87" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Extensions\StringExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Proxy.Interop.WindowsApi" Collapsed="true">
+    <Position X="88.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAQAAAAASAAAI=</HashCode>
+      <FileName>Interop\WindowsApi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.ConnectorBase" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="83.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAIIAAA=</HashCode>
+      <FileName>ConnectorBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pantec.E3Wrapper.Core.Application.Dispatcher" Collapsed="true">
+    <Position X="85.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Dispatcher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Pantec.E3Wrapper.Core.Application.Interfaces.IConnector" Collapsed="true">
+    <Position X="83.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IConnector.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Application.Interfaces.IConnectorSelectionDialog" Collapsed="true">
+    <Position X="85.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IConnectorSelectionDialog.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

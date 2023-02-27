@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Struct Name="Pantec.E3Wrapper.Core.Domain.Models.PanelLocationStruct" Collapsed="true">
+    <Position X="49" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAYAE=</HashCode>
+      <FileName>Models\PanelLocationStruct.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Pantec.E3Wrapper.Core.Domain.Models.SchemaLocationStruct" Collapsed="true">
+    <Position X="50.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Models\SchemaLocationStruct.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.Proxy.IE3Attributed" Collapsed="true">
+    <Position X="2.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQBAAABAIAAAAABAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Interfaces\Proxy\IE3Attributed.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.Proxy.IE3Identificated" Collapsed="true">
+    <Position X="4.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Interfaces\Proxy\IE3Identificated.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.Proxy.IE3IdentificatedGlobal" Collapsed="true">
+    <Position X="7" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Interfaces\Proxy\IE3IdentificatedGlobal.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.Proxy.IE3Named" Collapsed="true">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Interfaces\Proxy\IE3Named.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.Proxy.IE3NamedReadonly" Collapsed="true">
+    <Position X="9.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Interfaces\Proxy\IE3NamedReadonly.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.Proxy.IE3SchemaLocation" Collapsed="true">
+    <Position X="12" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBA=</HashCode>
+      <FileName>Interfaces\Proxy\IE3SchemaLocation.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.Proxy.IProxyProvider&lt;T&gt;" Collapsed="true">
+    <Position X="15" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\Proxy\IProxyProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.Proxy.IProxyWrapper" Collapsed="true">
+    <Position X="49" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgIAQAAAAAAAAAEAAAQAAAAAAAA=</HashCode>
+      <FileName>Interfaces\Proxy\IProxyWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.IApplication" Collapsed="true">
+    <Position X="18" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAACQAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Interfaces\IApplication.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.IAttribute" Collapsed="true">
+    <Position X="12" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgCAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.IBinData" Collapsed="true">
+    <Position X="46.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IBinData.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.IBoard" Collapsed="true">
+    <Position X="21" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IBoard.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.IBundle" Collapsed="true">
+    <Position X="12" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IBundle.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.IComponent" Collapsed="true">
+    <Position X="6" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IComponent.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.IConnection" Collapsed="true">
+    <Position X="6" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IConnection.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.IConnectLine" Collapsed="true">
+    <Position X="6" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IConnectLine.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.IDevice" Collapsed="true">
+    <Position X="15" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAACAAABgBAAAAAABAAAABAAAA=</HashCode>
+      <FileName>Interfaces\IDevice.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.IDimension" Collapsed="true">
+    <Position X="12" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IDimension.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.IExternalDocument" Collapsed="true">
+    <Position X="21" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IExternalDocument.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.IField" Collapsed="true">
+    <Position X="18" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IField.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.IFunctionalPort" Collapsed="true">
+    <Position X="9" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IFunctionalPort.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.IFunctionalUnit" Collapsed="true">
+    <Position X="24" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IFunctionalUnit.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.IGraph" Collapsed="true">
+    <Position X="24" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IGraph.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.IGroup" Collapsed="true">
+    <Position X="6" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IGroup.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.IJob" Collapsed="true">
+    <Position X="15" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAgMAwQIJEQAAEGBQEAAACDAABAAIKAJEiQAgEIAAA=</HashCode>
+      <FileName>Interfaces\IJob.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.ILayer" Collapsed="true">
+    <Position X="9" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ILayer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.IModule" Collapsed="true">
+    <Position X="9" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IModule.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.IModulePort" Collapsed="true">
+    <Position X="9" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IModulePort.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.INet" Collapsed="true">
+    <Position X="15" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\INet.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.INetSegment" Collapsed="true">
+    <Position X="6" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\INetSegment.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.IOption" Collapsed="true">
+    <Position X="12" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IOption.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.IOutline" Collapsed="true">
+    <Position X="24" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IOutline.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.IPin" Collapsed="true">
+    <Position X="12" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAABABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IPin.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.ISheet" Collapsed="true">
+    <Position X="15" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ISheet.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.ISignal" Collapsed="true">
+    <Position X="21" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Interfaces\ISignal.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.ISignalClass" Collapsed="true">
+    <Position X="9" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ISignalClass.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.ISlot" Collapsed="true">
+    <Position X="21" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ISlot.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.IStructureNode" Collapsed="true">
+    <Position X="24" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IStructureNode.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.ISupply" Collapsed="true">
+    <Position X="18" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ISupply.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.ISymbol" Collapsed="true">
+    <Position X="24" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ISymbol.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.ITestpoint" Collapsed="true">
+    <Position X="18.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ITestpoint.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.IText" Collapsed="true">
+    <Position X="18" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IText.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.ITree" Collapsed="true">
+    <Position X="15" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ITree.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pantec.E3Wrapper.Core.Domain.Interfaces.IVariant" Collapsed="true">
+    <Position X="21" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IVariant.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Pantec.E3Wrapper.Core.Domain.Models.CheckOutMode" Collapsed="true">
+    <Position X="49" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Models\CheckOutMode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Pantec.E3Wrapper.Core.Domain.Models.CheckOutResult" Collapsed="true">
+    <Position X="50.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAEAAAAAAAACAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Models\CheckOutResult.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Pantec.E3Wrapper.Core.Domain.Models.SymbolModeEnum" Collapsed="true">
+    <Position X="50.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAASIAQACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\SymbolModeEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Pantec.Wrapper.Entities.Models.SignalNameType" Collapsed="true">
+    <Position X="49" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Models\SignalNameType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

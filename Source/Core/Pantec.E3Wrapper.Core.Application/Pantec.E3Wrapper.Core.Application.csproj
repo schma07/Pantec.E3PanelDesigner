@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Interfaces\Domain\**" />
+    <EmbeddedResource Remove="Interfaces\Domain\**" />
+    <None Remove="Interfaces\Domain\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Pantec.E3Proxy\Pantec.E3Proxy.csproj" />
+    <ProjectReference Include="..\Pantec.E3Wrapper.Core.Domain\Pantec.E3Wrapper.Core.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
