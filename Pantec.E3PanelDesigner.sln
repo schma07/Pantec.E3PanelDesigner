@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pantec.E3Wrapper.Infrastruc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pantec.E3Proxy", "Source\Common\Pantec.E3Proxy\Pantec.E3Proxy.csproj", "{969C5A6E-606D-44B1-BC05-18CDAA34F6E8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pantec.E3PanelDesigner", "Source\Presentation\Pantec.E3PanelDesigner.Gui\Pantec.E3PanelDesigner.csproj", "{2FAA5EB3-C9C7-4176-9BEF-7F47E347C426}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pantec.E3PanelDesigner.Gui", "Source\Presentation\Pantec.E3PanelDesigner.Gui\Pantec.E3PanelDesigner.Gui.csproj", "{2FAA5EB3-C9C7-4176-9BEF-7F47E347C426}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
