@@ -66,7 +66,7 @@ namespace Pantec.E3PanelDesigner.ViewModels
         public ICommand ConnectApplicationCommand { get; private set; }
         public ICommand DisconnectApplicationCommand { get; private set; }
         public ICommand GetJobInfoCommand { get; private set; }
-        public ICommand GetSelectedDeviceComponentInfoCommand { get; private set; }
+        public ICommand UpdateModelPlacementCommand { get; private set; }
 
         public MainViewModel()
             : base(new MainWindow())
@@ -84,28 +84,15 @@ namespace Pantec.E3PanelDesigner.ViewModels
             GetJobInfoCommand = new RelayCommand(OnGetJobInfo,
                 () => _app != null && IsProjectOpened);
 
-            //GetSelectedDeviceComponentInfoCommand = new RelayCommand(OnGetSelectedDeviceComponentInfo,
-            //    () => _app != null && IsDeviceSelected);
+            UpdateModelPlacementCommand = new RelayCommand(OnUpdateModelPlacement,
+                () => _app != null && IsProjectOpened);
         }
 
-        //private void OnGetSelectedDeviceComponentInfo()
-        //{
-        //    using (var job = _app.CreateJobObject())
-        //    {
-        //        object id = null;
-        //        var selectedCount = job.Proxy.GetAllDeviceIds(ref ids);
-        //        var name = SelectedDeviceName;
-        //        using (var dev = job.CreateDeviceObject())
-        //        {
-        //            dev.Name = name;
-        //            {
-        //                dev.Id = id;
-        //                Console.WriteLine(dev.Name);
-        //                AllDevicesInProject.Add(dev.Name);
-        //            }
-        //        }
-        //    }
-        //}
+        private void OnUpdateModelPlacement()
+        {
+
+        }
+
 
         private void OnGetJobInfo()
         {
@@ -123,7 +110,6 @@ namespace Pantec.E3PanelDesigner.ViewModels
                 {
                     foreach (var id in idsEnumerable)
                     {
-
                         dev.Id = id;
                         using (var com = job.CreateComponentObject())
                         {

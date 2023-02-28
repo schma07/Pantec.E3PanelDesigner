@@ -1,15 +1,9 @@
 ﻿using Pantec.E3Proxy.Interop;
+using Pantec.E3Wrapper.Core.Application.Entities;
 using Pantec.E3Wrapper.Core.Application.Interfaces;
 using Pantec.E3Wrapper.Core.Domain.Interfaces;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
-using Pantec.E3Wrapper.Core.Application.Entities;
 
 namespace Pantec.E3Wrapper.Core.Application
 {

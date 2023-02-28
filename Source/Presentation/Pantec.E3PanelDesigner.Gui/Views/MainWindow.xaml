@@ -7,7 +7,7 @@
         xmlns:viewModels="clr-namespace:Pantec.E3PanelDesigner.ViewModels"
         mc:Ignorable="d"
         Title="Pantec - E3 PanelDesigner"
-        Height="350" Width="525"
+        Height="400" Width="500"
         WindowStartupLocation="CenterScreen"
         d:DataContext="{d:DesignInstance viewModels:MainViewModel}" Closed="Window_Closed">
     <Window.Background>
@@ -62,7 +62,6 @@
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
-
                         <Label Content="Name: "/>
                         <Label Grid.Column="1"
                                Grid.Row="0"
@@ -78,11 +77,22 @@
                             </ListBox.ItemTemplate>
                         </ListBox>
                     </Grid>
-
-
+                </StackPanel>
+            </Expander>
+            <Expander Header="Update panel layout"
+                      IsExpanded="False"
+                      Visibility="{Binding IsConnected, Converter={converters:BoolToVisibilityConverter}}">
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Update panel layout"
+                           Margin="20 2 2 2" />
+                    <StackPanel Orientation="Horizontal"
+                                Margin="40 2 2 2">
+                        <Button Content="Update model placement"
+                                MinWidth="100"
+                                Command="{Binding Path=UpdateModelPlacementCommand}" />
+                    </StackPanel>
                 </StackPanel>
             </Expander>
         </StackPanel>
     </Grid>
-
 </Window>
