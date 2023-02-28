@@ -36,7 +36,7 @@
                     </StackPanel>
                 </StackPanel>
             </Expander>
-            <Expander Header="Connect to project"
+            <Expander Header="Display project details"
                       IsExpanded="True"
                       Visibility="{Binding IsConnected, Converter={converters:BoolToVisibilityConverter}}">
                 <StackPanel Orientation="Vertical"
@@ -83,7 +83,7 @@
                       IsExpanded="False"
                       Visibility="{Binding IsConnected, Converter={converters:BoolToVisibilityConverter}}">
                 <StackPanel Orientation="Vertical">
-                    <Label Content="Update panel layout"
+                    <Label Content="Place models according current configuration"
                            Margin="20 2 2 2" />
                     <StackPanel Orientation="Horizontal"
                                 Margin="40 2 2 2">

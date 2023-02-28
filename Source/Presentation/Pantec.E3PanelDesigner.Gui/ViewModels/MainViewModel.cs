@@ -2,6 +2,7 @@
 using Pantec.E3PanelDesigner.Views;
 using Pantec.E3Wrapper.ApplicationSelection.Gui;
 using Pantec.E3Wrapper.ApplicationSelection.Gui.Commands;
+using Pantec.E3Wrapper.ApplicationSelection.Gui.Models;
 using Pantec.E3Wrapper.ApplicationSelection.Gui.ViewModels.Base;
 using Pantec.E3Wrapper.Core.Application.Entities;
 using Pantec.E3Wrapper.Core.Application.Entities.Extensions;
@@ -25,7 +26,7 @@ namespace Pantec.E3PanelDesigner.ViewModels
         private IApplication _app;
         private string _projectName;
         private ObservableCollection<string> _allDevicesInProject = new();
-        private string _selectedDeviceName;
+        private Collection<DeviceAggregate> _attributedDevices = new();
 
 
         public bool IsConnected => _app?.IsApplicationRunning() ?? false;
@@ -41,13 +42,13 @@ namespace Pantec.E3PanelDesigner.ViewModels
                 RaisePropertyChanged(nameof(ProjectName));
             }
         }
-        public string SelectedDeviceName
+        public Collection<DeviceAggregate> AttributedDevices
         {
-            get => _selectedDeviceName;
+            get => _attributedDevices;
             set
             {
-                _selectedDeviceName = value;
-                RaisePropertyChanged(nameof(SelectedDeviceName));
+                _attributedDevices = value;
+                RaisePropertyChanged(nameof(AttributedDevices));
             }
         }
 
@@ -90,9 +91,46 @@ namespace Pantec.E3PanelDesigner.ViewModels
 
         private void OnUpdateModelPlacement()
         {
+           GetDeviceAggregatesAttributed("pan_ModelPlacedByScript");
 
         }
 
+        #region Update panel placement private methods
+        
+        /// <summary>
+        /// Create aggregates for all devices in the project attributed with the parameter.
+        /// </summary>
+        /// <param name="attributeName"></param>
+        /// <returns>IEnumerable with DeviceAggregates</returns>
+        private void GetDeviceAggregatesAttributed(string attributeName)
+        {
+            AttributedDevices.Clear();
+
+            using (var job = _app.CreateJobObject())
+            {
+                object ids = null;
+                var allDeviceIds = job.Proxy.GetAllDeviceIds(ref ids);
+                var allDeviceIdsEnumerable = ids.ToIEnumerable();
+
+                using (var device = job.CreateDeviceObject())
+                {
+                    foreach (var id in allDeviceIdsEnumerable)
+                    {
+                        device.Id = id;
+
+                        if (device.HasAttribute(attributeName))
+                        {
+                            DeviceAggregate attributedDevice = new DeviceAggregate(device.Id, device.Name);
+                            AttributedDevices.Add(attributedDevice);
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+        #endregion
 
         private void OnGetJobInfo()
         {
@@ -102,21 +140,15 @@ namespace Pantec.E3PanelDesigner.ViewModels
                 // Sample working with arrays (use proxy object)
                 object ids = null;
 
-                var selectedCount = job.Proxy.GetAllDeviceIds(ref ids);
-                Console.WriteLine(selectedCount);
+                var allCount = job.Proxy.GetAllDeviceIds(ref ids);
+                Console.WriteLine(allCount);
                 var idsEnumerable = ids.ToIEnumerable(); // using E3Series.Wrapper.Entities.Extensions;
-                using (var dev = job.CreateDeviceObject())
-
+                using (var device = job.CreateDeviceObject())
                 {
                     foreach (var id in idsEnumerable)
                     {
-                        dev.Id = id;
-                        using (var com = job.CreateComponentObject())
-                        {
-
-                            com.Id = id;
-                            AllDevicesInProject.Add(dev.Name);
-                        }
+                        device.Id = id;
+                        AllDevicesInProject.Add(device.Name);
                     }
                 }
             }
