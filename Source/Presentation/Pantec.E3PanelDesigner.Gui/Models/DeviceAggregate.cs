@@ -24,6 +24,10 @@ namespace Pantec.E3Wrapper.ApplicationSelection.Gui.Models
         /// </summary>
         public string Name { get; set; }
 
+        /// <summary>
+        /// E3.Series device´s model name
+        /// </summary>
+        public string ModelName { get; set; }
 
         /// <summary>
         /// Current panel model placement coordinates

@@ -26,7 +26,7 @@ namespace Pantec.E3PanelDesigner.ViewModels
         private IApplication _app;
         private string _projectName;
         private ObservableCollection<string> _allDevicesInProject = new();
-        private Collection<DeviceAggregate> _attributedDevices = new();
+        private ObservableCollection<DeviceAggregate> _attributedDevices =new();
 
 
         public bool IsConnected => _app?.IsApplicationRunning() ?? false;
@@ -42,7 +42,8 @@ namespace Pantec.E3PanelDesigner.ViewModels
                 RaisePropertyChanged(nameof(ProjectName));
             }
         }
-        public Collection<DeviceAggregate> AttributedDevices
+
+        public ObservableCollection<DeviceAggregate> AttributedDevices
         {
             get => _attributedDevices;
             set
@@ -51,8 +52,6 @@ namespace Pantec.E3PanelDesigner.ViewModels
                 RaisePropertyChanged(nameof(AttributedDevices));
             }
         }
-
-
 
         public ObservableCollection<string> AllDevicesInProject
         {
@@ -81,31 +80,33 @@ namespace Pantec.E3PanelDesigner.ViewModels
                 () => _app == null);
             DisconnectApplicationCommand = new RelayCommand(OnDisconnectApplication,
                 () => _app != null);
-
             GetJobInfoCommand = new RelayCommand(OnGetJobInfo,
                 () => _app != null && IsProjectOpened);
-
             UpdateModelPlacementCommand = new RelayCommand(OnUpdateModelPlacement,
                 () => _app != null && IsProjectOpened);
         }
 
+        /// <summary>
+        /// Places device models according to the currently selected options/variants 
+        /// </summary>
         private void OnUpdateModelPlacement()
         {
-           GetDeviceAggregatesAttributed("pan_ModelPlacedByScript");
+            CreateAttributedDeviceAggregates("pan_ModelPlacedByScript");
+
+            
+
 
         }
 
         #region Update panel placement private methods
-        
+
         /// <summary>
-        /// Create aggregates for all devices in the project attributed with the parameter.
+        /// Create aggregates for all devices in the project attributed with the attributename
         /// </summary>
         /// <param name="attributeName"></param>
         /// <returns>IEnumerable with DeviceAggregates</returns>
-        private void GetDeviceAggregatesAttributed(string attributeName)
+        private void CreateAttributedDeviceAggregates(string attributeName)
         {
-            AttributedDevices.Clear();
-
             using (var job = _app.CreateJobObject())
             {
                 object ids = null;
@@ -125,8 +126,9 @@ namespace Pantec.E3PanelDesigner.ViewModels
                         }
                     }
                 }
-            }
+            }         
         }
+
 
 
 
