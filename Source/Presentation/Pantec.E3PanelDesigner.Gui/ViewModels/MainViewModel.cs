@@ -8,13 +8,9 @@ using Pantec.E3Wrapper.Core.Application.Entities;
 using Pantec.E3Wrapper.Core.Application.Entities.Extensions;
 using Pantec.E3Wrapper.Core.Application.Interfaces;
 using Pantec.E3Wrapper.Core.Domain.Interfaces;
-using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Documents;
 using System.Windows.Input;
 
 namespace Pantec.E3PanelDesigner.ViewModels
@@ -25,8 +21,8 @@ namespace Pantec.E3PanelDesigner.ViewModels
         private readonly string[] _appChangedPropertiesNames = { nameof(IsConnected), nameof(IsProjectOpened) };
         private IApplication _app;
         private string _projectName;
-        private ObservableCollection<string> _allDevicesInProject = new();
-        private ObservableCollection<DeviceAggregate> _attributedDevices =new();
+        private ObservableCollection<DeviceAggregate> _allDevicesInProject = new();
+        private ObservableCollection<DeviceAggregate> _attributedDevices = new();
 
 
         public bool IsConnected => _app?.IsApplicationRunning() ?? false;
@@ -53,7 +49,7 @@ namespace Pantec.E3PanelDesigner.ViewModels
             }
         }
 
-        public ObservableCollection<string> AllDevicesInProject
+        public ObservableCollection<DeviceAggregate> AllDevicesInProject
         {
             get => _allDevicesInProject;
             set
@@ -91,11 +87,39 @@ namespace Pantec.E3PanelDesigner.ViewModels
         /// </summary>
         private void OnUpdateModelPlacement()
         {
-            CreateAttributedDeviceAggregates("pan_ModelPlacedByScript");
+            using (var job = _app.CreateJobObject())
+            {
+                AllDevicesInProject.Clear();
+                var allDeviceCount = job.GetAllDevicesId();
 
-            
+                using (var device = job.CreateDeviceObject())
+                {
+                    foreach (var id in allDeviceCount)
+                    {
+                        device.Id = id;
+                        if (device.ModelIsPlaced())
+                        {
+                            DeviceAggregate placedDevice = new(device.Id, device.Name);
+                            placedDevice.SourcePanelLocation = device.PanelLocation;
 
+                            placedDevice.ModelName = device.Proxy.GetModelName();
 
+                            var mountedSlotIds = device.Proxy.GetMountedSlotIdsEnumerable();
+                            using (var slot = job.CreateSlotObject())
+                            {
+                                foreach (var slotId in mountedSlotIds)
+                                {
+                                    slot.Id = slotId;
+                                    placedDevice.SlotsOnModel.Add(new KeyValuePair<int, string>(slot.Id, slot.GetName()));
+                                }
+                            }
+                            AllDevicesInProject.Add(placedDevice);
+                        }
+
+                    }
+
+                }
+            }
         }
 
         #region Update panel placement private methods
@@ -105,32 +129,10 @@ namespace Pantec.E3PanelDesigner.ViewModels
         /// </summary>
         /// <param name="attributeName"></param>
         /// <returns>IEnumerable with DeviceAggregates</returns>
-        private void CreateAttributedDeviceAggregates(string attributeName)
+        private void CreateAttributedDeviceAggregates()
         {
-            using (var job = _app.CreateJobObject())
-            {
-                object ids = null;
-                var allDeviceIds = job.Proxy.GetAllDeviceIds(ref ids);
-                var allDeviceIdsEnumerable = ids.ToIEnumerable();
 
-                using (var device = job.CreateDeviceObject())
-                {
-                    foreach (var id in allDeviceIdsEnumerable)
-                    {
-                        device.Id = id;
-
-                        if (device.HasAttribute(attributeName))
-                        {
-                            DeviceAggregate attributedDevice = new DeviceAggregate(device.Id, device.Name);
-                            AttributedDevices.Add(attributedDevice);
-                        }
-                    }
-                }
-            }         
         }
-
-
-
 
         #endregion
 
@@ -138,19 +140,17 @@ namespace Pantec.E3PanelDesigner.ViewModels
         {
             using (var job = _app.CreateJobObject())
             {
-                ProjectName = job.Proxy.GetName();
+                ProjectName = job.GetName();
                 // Sample working with arrays (use proxy object)
                 object ids = null;
-
                 var allCount = job.Proxy.GetAllDeviceIds(ref ids);
-                Console.WriteLine(allCount);
                 var idsEnumerable = ids.ToIEnumerable(); // using E3Series.Wrapper.Entities.Extensions;
                 using (var device = job.CreateDeviceObject())
                 {
                     foreach (var id in idsEnumerable)
                     {
                         device.Id = id;
-                        AllDevicesInProject.Add(device.Name);
+                        //AllDevicesInProject.Add(device.GetName());
                     }
                 }
             }

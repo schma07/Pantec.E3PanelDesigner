@@ -9,8 +9,9 @@ namespace Pantec.E3Wrapper.Core.Domain.Interfaces
     /// Interface for class-wrapper of e3Device COM object
     /// </summary>
     public interface IDevice : IProxyProvider<E3DeviceProxy>,
-        IE3Identificated, IE3Named, IE3IdentificatedGlobal, IE3Attributed
+        IE3Identificated, IE3Named, IE3IdentificatedGlobal, IE3Attributed, IE3PanelLocation
     {
+       
         /// <summary>
         /// Returns iterator of all devices in given assembly/terminal block
         /// </summary>
@@ -58,12 +59,6 @@ namespace Pantec.E3Wrapper.Core.Domain.Interfaces
         /// </summary>
         /// <param name="iterator">IPin iterator</param>
         /// <returns></returns>
-        IEnumerable<IPin> GetPins(IPin iterator);
-
-        /// <summary>
-        /// Get device location on panel sheet
-        /// </summary>
-        /// <returns></returns>
-        PanelLocationStruct? GetPanelLocation();
+        IEnumerable<IPin> GetPins(IPin iterator);        
     }
 }

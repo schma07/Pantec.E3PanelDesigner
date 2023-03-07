@@ -1,5 +1,6 @@
 ﻿using Pantec.E3Proxy;
 using Pantec.E3Wrapper.Core.Domain.Models;
+using System.Runtime.CompilerServices;
 
 namespace Pantec.E3Wrapper.Core.Application.Entities.Extensions
 {
@@ -34,6 +35,18 @@ namespace Pantec.E3Wrapper.Core.Application.Entities.Extensions
             }
 
             return ret;
+        }
+
+        /// <summary>
+        /// Get mounted slot ids for device
+        /// </summary>
+        /// <param name="device">E3.series IDeviceInterface COM object</param>
+        /// <returns>IEnumerable of ids or empty collection</returns>
+        public static IEnumerable<int> GetMountedSlotIdsEnumerable(this E3DeviceProxy device)
+        {
+            object slotIds = null;
+            device.GetMountedSlotIds(ref slotIds);
+            return slotIds.ToIEnumerable();
         }
 
         /// <summary>
@@ -76,12 +89,35 @@ namespace Pantec.E3Wrapper.Core.Application.Entities.Extensions
         /// </summary>
         /// <param name="device">E3.series IDeviceInterface COM object</param>
         /// <returns>Panel location struct or null if not placed</returns>
-        public static PanelLocationStruct? GetPanelLocation(this E3DeviceProxy device)
+        public static PanelLocationStruct? GetPanelLocationStruct(this E3DeviceProxy device)
         {
-            if (device.GetPanelLocation(out var x, out var y, out var z, out var rot) == 0)
+            int shtid = device.GetPanelLocation(out var x, out var y, out var z, out var rot);
+            if (shtid == 0)
                 return null;
 
             return new PanelLocationStruct((double)x, (double)y, (double)z, rot as string);
+        }
+
+        /// <summary>
+        /// Check for model is placed on the sheet
+        /// </summary>
+        /// <param name="proxy">E3.series IInterface COM proxy object</param>
+        /// <returns></returns>
+        public static bool ModelIsPlaced(this E3DeviceProxy proxy) => proxy.GetPanelLocationStruct().HasValue;
+
+        /// <summary>
+        /// Set panel location for device
+        /// </summary>
+        /// <param name="device">E3.series IDeviceInterface COM object</param>
+        /// <returns>1 if successful or 0 if not placed/Error</returns>
+        public static bool SetPanelLocationStruct(this E3DeviceProxy device, PanelLocationStruct? panelLocation)
+        {
+            try
+            {
+                device.SetPanelLocation(1, 100, panelLocation.Value.X, panelLocation.Value.Y, panelLocation.Value.Z, panelLocation.Value.Rotation, 0, 0, 0).CastToBool();
+                return true;
+            }
+            catch { return false; }
         }
     }
 }

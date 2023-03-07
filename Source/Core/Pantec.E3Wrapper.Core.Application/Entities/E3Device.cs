@@ -17,15 +17,25 @@ namespace Pantec.E3Wrapper.Core.Application.Entities
         {
         }
 
+
         /// <inheritdoc />
         public IEnumerable<IDevice> GetDevices(IDevice iterator, bool expandAll = false)
             => iterator.GetEnumerable(Proxy.GetDeviceIdsEnumerable(expandAll));
 
+        /// <inheritdoc/>
+        public IEnumerable<int> GetMountedSlotIds()
+            => Proxy.GetMountedSlotIdsEnumerable();
+
+        // <inheritdoc/>
+        //public IEnumerable<IDevice> GetMountedSlots(IDevice iterator)
+        //    => iterator.GetEnumerable(()=> GetMountedSlotIds());
+
+
         /// <inheritdoc />
         public int GetSymbolCountByPins(
-            IPin pinIterator,
-            ISheet sheetIterator,
-            SymbolModeEnum mode = SymbolModeEnum.AllSymbols)
+        IPin pinIterator,
+        ISheet sheetIterator,
+        SymbolModeEnum mode = SymbolModeEnum.AllSymbols)
         {
             if (((IJob)Parent).IsMultiuserProject())
             {
@@ -56,8 +66,7 @@ namespace Pantec.E3Wrapper.Core.Application.Entities
         public IEnumerable<IPin> GetPins(IPin iterator)
             => iterator.GetEnumerable(Proxy.GetPinIdsEnumerable);
 
-        /// <inheritdoc />
-        public PanelLocationStruct? GetPanelLocation() => Proxy.GetPanelLocation();
+
 
         #region Implementation of IE3NamedReadonly
 
@@ -135,6 +144,32 @@ namespace Pantec.E3Wrapper.Core.Application.Entities
         /// <inheritdoc />
         public int DeleteAttribute(string attributeName) => Proxy.DeleteAttribute(attributeName);
 
+        #endregion
+
+        #region Implementration of IE3PanelLocation
+        
+        /// <inheritdoc/>
+        public bool SetPanelLocationStruct(PanelLocationStruct panelLocation) => Proxy.SetPanelLocationStruct(panelLocation);
+      
+        /// <inheritdoc/>
+        public PanelLocationStruct? PanelLocation
+        {
+            get => GetPanelLocationStruct();
+            set => Proxy.SetPanelLocationStruct(value);
+        }
+
+        /// <inheritdoc />
+        public PanelLocationStruct? GetPanelLocationStruct() => Proxy.GetPanelLocationStruct();
+
+        /// <inheritdoc/>
+        public bool ModelIsPlaced() => Proxy.ModelIsPlaced();
+
+
+
+
+
+
+        //public IEnumerable<int> GetMountedSlotsId() => Proxy.GetMountedSlotIds();
         #endregion
     }
 }

@@ -11,6 +11,7 @@ namespace Pantec.E3Wrapper.Core.Domain.Interfaces
         IE3NamedReadonly,
         IE3Attributed
     {
+
         /// <summary>
         /// Create object for working with attributes
         /// </summary>
@@ -216,6 +217,18 @@ namespace Pantec.E3Wrapper.Core.Domain.Interfaces
         IVariant CreateVariantObject();
 
         /// <summary>
+        /// Returns iterator of all device´s id in the project
+        /// </summary>
+        /// <returns></returns>
+        IEnumerable<int> GetAllDevicesId();
+
+        /// <summary>
+        /// Returns iterator of all devices in the project
+        /// </summary>
+        /// <returns></returns>
+        IEnumerable<IDevice> GetAllDevicesEnumerable(IDevice iterator);
+
+        /// <summary>
         /// Get global identifier by object identifier
         /// </summary>
         /// <param name="id">Object identifier</param>
@@ -241,5 +254,6 @@ namespace Pantec.E3Wrapper.Core.Domain.Interfaces
         /// </summary>
         /// <returns></returns>
         bool IsMultiuserProject();
+        
     }
 }

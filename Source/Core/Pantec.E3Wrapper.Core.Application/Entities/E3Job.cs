@@ -1,7 +1,11 @@
-﻿using Pantec.E3Proxy;
+﻿
+using Pantec.E3Proxy;
+using Pantec.E3Proxy.Extensions;
 using Pantec.E3Wrapper.Core.Application.Entities.Base;
 using Pantec.E3Wrapper.Core.Application.Entities.Extensions;
 using Pantec.E3Wrapper.Core.Domain.Interfaces;
+using Pantec.E3Wrapper.Core.Domain.Models;
+using System.Runtime.CompilerServices;
 
 namespace Pantec.E3Wrapper.Core.Application.Entities
 {
@@ -119,6 +123,15 @@ namespace Pantec.E3Wrapper.Core.Application.Entities
         public IVariant CreateVariantObject() => CreateObject<IVariant>();
 
         /// <inheritdoc />
+        public IEnumerable<int> GetAllDevicesId()
+            => Proxy.GetAllDeviceIdsEnumerable();
+
+        
+        /// <inheritdoc />
+        public IEnumerable<IDevice> GetAllDevicesEnumerable(IDevice iterator) 
+           => iterator.GetEnumerable(GetAllDevicesId());
+
+        /// <inheritdoc />
         public string GetGidOfId(int id) => Proxy.GetGidOfId(id);
 
         /// <inheritdoc />
@@ -137,12 +150,16 @@ namespace Pantec.E3Wrapper.Core.Application.Entities
         /// <inheritdoc />
         public string GetName() => Proxy.GetName();
 
+
         #endregion
 
         #region Implementation of IE3Attributed
 
         /// <inheritdoc />
         public bool HasAttribute(string attributeName) => Proxy.HasAttribute(attributeName).CastToBool();
+
+
+
 
         /// <inheritdoc />
         public string GetAttributeValue(string attributeName) => Proxy.GetAttributeValue(attributeName);

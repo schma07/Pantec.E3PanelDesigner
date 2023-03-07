@@ -27,23 +27,29 @@ namespace Pantec.E3Wrapper.ApplicationSelection.Gui.Models
         /// <summary>
         /// E3.Series device´s model name
         /// </summary>
-        public string ModelName { get; set; }
+        public string? ModelName { get; set; }
 
         /// <summary>
         /// Current panel model placement coordinates
         /// </summary>
-        public PanelLocationStruct SourcePanelLocation { get; set; }
+        public PanelLocationStruct? SourcePanelLocation { get; set; }
 
         /// <summary>
         /// Panel model placement coordinates for active option/variant visability
         /// </summary>
-        public PanelLocationStruct TargetPanelLocation { get; set; }
+        public PanelLocationStruct? TargetPanelLocation { get; set; }
+
+        /// <summary>
+        /// E3.Series device´s mounting slots 
+        /// </summary>
+        public List<KeyValuePair<int, string>> SlotsOnModel { get; set; }
 
 
         public DeviceAggregate(int id, string name)
         {
             this.Id = id;
             this.Name = name;
+            this.SlotsOnModel= new List<KeyValuePair<int, string>>();
         }
     }
 }
