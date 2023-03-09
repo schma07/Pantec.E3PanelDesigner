@@ -10,5 +10,15 @@ namespace Pantec.E3Wrapper.Core.Domain.Interfaces
     public interface ISlot : IProxyProvider<E3SlotProxy>,
         IE3Identificated, IE3NamedReadonly, IE3IdentificatedGlobal
     {
+        /// <summary>
+        /// MountType of device´s model
+        /// </summary>
+        string MountType { get; }
+
+        /// <summary>
+        /// Get device´s model mounting slot type
+        /// </summary>
+        /// <returns></returns>
+        string GetMountType();
     }
 }

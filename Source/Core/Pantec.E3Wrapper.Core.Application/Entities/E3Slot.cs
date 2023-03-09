@@ -51,5 +51,12 @@ namespace Pantec.E3Wrapper.Core.Application.Entities
         public int SetId(string globalId) => Proxy.SetId(((IJob)Parent).GetIdOfGid(globalId));
 
         #endregion
+
+        ///<inheritdoc/>
+        public string MountType => GetMountType();
+
+        /// <inheritdoc/>
+        public string GetMountType() => Proxy.GetMountType();
+
     }
 }

@@ -49,13 +49,13 @@ namespace Pantec.E3PanelDesigner.ViewModels
             }
         }
 
-        public ObservableCollection<DeviceAggregate> AllDevicesInProject
+        public ObservableCollection<DeviceAggregate> AllMountedDevicesInProject
         {
             get => _allDevicesInProject;
             set
             {
                 _allDevicesInProject = value;
-                RaisePropertyChanged(nameof(AllDevicesInProject));
+                RaisePropertyChanged(nameof(AllMountedDevicesInProject));
             }
         }
 
@@ -89,32 +89,34 @@ namespace Pantec.E3PanelDesigner.ViewModels
         {
             using (var job = _app.CreateJobObject())
             {
-                AllDevicesInProject.Clear();
+                AllMountedDevicesInProject.Clear();
                 var allDeviceCount = job.GetAllDevicesId();
 
                 using (var device = job.CreateDeviceObject())
                 {
+                    List<int> mountedDevicesIds = new List<int>();
                     foreach (var id in allDeviceCount)
                     {
                         device.Id = id;
-                        if (device.ModelIsPlaced())
-                        {
-                            DeviceAggregate placedDevice = new(device.Id, device.Name);
-                            placedDevice.SourcePanelLocation = device.PanelLocation;
-
-                            placedDevice.ModelName = device.Proxy.GetModelName();
-
-                            var mountedSlotIds = device.Proxy.GetMountedSlotIdsEnumerable();
+                        device.IsAssembly();
+                        //if (device.IsModelPlaced())
+                        //{
+                        
+                        var mountedSlotIds = device.GetMountedSlotIdsEnumerable(device);
                             using (var slot = job.CreateSlotObject())
                             {
                                 foreach (var slotId in mountedSlotIds)
                                 {
                                     slot.Id = slotId;
-                                    placedDevice.SlotsOnModel.Add(new KeyValuePair<int, string>(slot.Id, slot.GetName()));
+                                    object slotIds = null;
+                                    slot.Proxy.GetMountedDeviceIds(ref slotIds);
+                                   var c = slotIds.ToIEnumerable();
+                                    slot.Proxy.GetName();
+                                    DeviceAggregate placedDevice = new(device, slot);
+                                    AllMountedDevicesInProject.Add(placedDevice);
                                 }
                             }
-                            AllDevicesInProject.Add(placedDevice);
-                        }
+                        //}
 
                     }
 
@@ -124,15 +126,6 @@ namespace Pantec.E3PanelDesigner.ViewModels
 
         #region Update panel placement private methods
 
-        /// <summary>
-        /// Create aggregates for all devices in the project attributed with the attributename
-        /// </summary>
-        /// <param name="attributeName"></param>
-        /// <returns>IEnumerable with DeviceAggregates</returns>
-        private void CreateAttributedDeviceAggregates()
-        {
-
-        }
 
         #endregion
 

@@ -6,6 +6,18 @@ namespace Pantec.E3Wrapper.Core.Application.Entities.Extensions
 {
     public static class E3DeviceExtensions
     {
+        public static string GetParentAssemblyName(this E3DeviceProxy device)
+        {
+            var oldId = device.GetId();
+            device.SetId(device.GetAssemblyId());
+
+            var parentAssemblyName = device.GetName();
+
+            device.SetId(oldId);
+            return parentAssemblyName;
+        }
+
+
         /// <summary>
         /// Get assembly's child devices (with sub-devices)
         /// </summary>
@@ -95,7 +107,7 @@ namespace Pantec.E3Wrapper.Core.Application.Entities.Extensions
             if (shtid == 0)
                 return null;
 
-            return new PanelLocationStruct((double)x, (double)y, (double)z, rot as string);
+            return new PanelLocationStruct((double)x, (double)y, (double)z, rot as string); // rot as string
         }
 
         /// <summary>

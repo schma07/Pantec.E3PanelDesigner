@@ -9,9 +9,9 @@ namespace Pantec.E3Wrapper.Core.Domain.Interfaces
     /// Interface for class-wrapper of e3Device COM object
     /// </summary>
     public interface IDevice : IProxyProvider<E3DeviceProxy>,
-        IE3Identificated, IE3Named, IE3IdentificatedGlobal, IE3Attributed, IE3PanelLocation
+        IE3Identificated, IE3Named, IE3IdentificatedGlobal, IE3Attributed, IPanelLocation
     {
-       
+
         /// <summary>
         /// Returns iterator of all devices in given assembly/terminal block
         /// </summary>
@@ -19,6 +19,14 @@ namespace Pantec.E3Wrapper.Core.Domain.Interfaces
         /// <param name="expandAll">Recurcive</param>
         /// <returns></returns>
         IEnumerable<IDevice> GetDevices(IDevice iterator, bool expandAll = false);
+
+        /// <summary>
+        /// Get assembly's child devices (with sub-devices)
+        /// </summary>
+        /// <param name="device">IDevice iterator</param>
+        /// <param name="expandAll"><c>true</c> - with sub-devices, <c>false</c> - only top-level of child devices</param>
+        /// <returns>IEnumerable of ids or empty collection</returns>
+        IEnumerable<int> GetDeviceIdsEnumerable(IDevice iterator, bool expandAll);
 
         /// <summary>
         /// Get device's symbol count (also works with multiuser projects)
@@ -59,6 +67,33 @@ namespace Pantec.E3Wrapper.Core.Domain.Interfaces
         /// </summary>
         /// <param name="iterator">IPin iterator</param>
         /// <returns></returns>
-        IEnumerable<IPin> GetPins(IPin iterator);        
+        IEnumerable<IPin> GetPins(IPin iterator);
+
+        /// <summary>
+        /// Check for device is assembly
+        /// </summary>
+        /// <returns></returns>
+        bool IsAssembly();
+
+        /// <summary>
+        /// Check for device is part of assembly
+        /// </summary>
+        /// <returns></returns>
+        bool IsAssemblyPart();
+
+        /// <summary>
+        /// Get device´s parent assembly id
+        /// </summary>
+        /// <returns></returns>
+        int GetParentAssemblyId();
+
+        /// <summary>
+        /// Get device´s parent assembly name
+        /// </summary>
+        /// <returns></returns>
+        string GetParentAssemblyName();
+
+        
+
     }
 }

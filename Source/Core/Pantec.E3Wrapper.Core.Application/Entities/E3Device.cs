@@ -26,6 +26,8 @@ namespace Pantec.E3Wrapper.Core.Application.Entities
         public IEnumerable<int> GetMountedSlotIds()
             => Proxy.GetMountedSlotIdsEnumerable();
 
+
+
         // <inheritdoc/>
         //public IEnumerable<IDevice> GetMountedSlots(IDevice iterator)
         //    => iterator.GetEnumerable(()=> GetMountedSlotIds());
@@ -147,10 +149,10 @@ namespace Pantec.E3Wrapper.Core.Application.Entities
         #endregion
 
         #region Implementration of IE3PanelLocation
-        
+
         /// <inheritdoc/>
         public bool SetPanelLocationStruct(PanelLocationStruct panelLocation) => Proxy.SetPanelLocationStruct(panelLocation);
-      
+
         /// <inheritdoc/>
         public PanelLocationStruct? PanelLocation
         {
@@ -158,18 +160,42 @@ namespace Pantec.E3Wrapper.Core.Application.Entities
             set => Proxy.SetPanelLocationStruct(value);
         }
 
+        /// <inheritdoc/>
+        public string? ModelName => Proxy.GetModelName();
+
+        public IEnumerable<int> GetMountedSlotIdsEnumerable(IDevice iterator) => Proxy.GetMountedSlotIdsEnumerable();
+
         /// <inheritdoc />
         public PanelLocationStruct? GetPanelLocationStruct() => Proxy.GetPanelLocationStruct();
 
         /// <inheritdoc/>
-        public bool ModelIsPlaced() => Proxy.ModelIsPlaced();
+        public bool IsModelPlaced() => Proxy.ModelIsPlaced();
+
+        /// <inheritdoc/>
+        public string GetModelName() => Proxy.GetModelName();
 
 
-
-
-
-
-        //public IEnumerable<int> GetMountedSlotsId() => Proxy.GetMountedSlotIds();
         #endregion
+
+        #region Additional properties and methods for aggregates
+
+        ///<inheritdoc/>
+        public bool IsAssembly() => Proxy.IsAssembly().CastToBool();
+
+        ///<inheritdoc/>
+        public bool IsAssemblyPart() => Proxy.IsAssemblyPart().CastToBool();
+
+        ///<inheritdoc/>
+        public int GetParentAssemblyId() => Proxy.GetAssemblyId();
+
+        ///<inheritdoc/>
+        public string GetParentAssemblyName() => Proxy.GetParentAssemblyName();
+        
+        /// <inheritdoc/>
+        public IEnumerable<int> GetDeviceIdsEnumerable(IDevice iterator, bool expandAll) => Proxy.GetDeviceIdsEnumerable(expandAll);  
+
+
+        #endregion
+
     }
 }

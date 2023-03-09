@@ -1,4 +1,6 @@
 ﻿using Pantec.E3Wrapper.ApplicationSelection.Gui.Interop;
+using Pantec.E3Wrapper.Core.Application.Entities.Extensions;
+using Pantec.E3Wrapper.Core.Domain.Interfaces;
 using Pantec.E3Wrapper.Core.Domain.Models;
 using System;
 using System.Collections.Generic;
@@ -23,33 +25,53 @@ namespace Pantec.E3Wrapper.ApplicationSelection.Gui.Models
         /// E3.Series device name
         /// </summary>
         public string Name { get; set; }
+        // <summary>
+        /// E3.Series device is assembly
+        /// </summary>
+        public bool IsAssembly { get; }
 
         /// <summary>
-        /// E3.Series device´s model name
+        /// E3.Series device is part of assembly
         /// </summary>
-        public string? ModelName { get; set; }
+        public bool IsAssemblyPart { get; }
+        /// <summary>
+        /// E3.Series device id of parent assembly
+        /// </summary>
+        public int ParentAssemblyId { get; }
+        /// <summary>
+        /// E3.Series device name of parent assembly
+        /// </summary>
+        public string ParentAssemblyName { get; }
 
         /// <summary>
-        /// Current panel model placement coordinates
+        /// Panel model placement coordinates for target option/variant configuration
         /// </summary>
-        public PanelLocationStruct? SourcePanelLocation { get; set; }
+        public PanelLocationStruct? TargetPanelLocation { get; }
 
-        /// <summary>
-        /// Panel model placement coordinates for active option/variant visability
-        /// </summary>
-        public PanelLocationStruct? TargetPanelLocation { get; set; }
+        public List<KeyValuePair<int, string>> AssemblySubDevices { get; set; } = new();
 
-        /// <summary>
-        /// E3.Series device´s mounting slots 
-        /// </summary>
-        public List<KeyValuePair<int, string>> SlotsOnModel { get; set; }
+        /// <inheritdoc/>
+        public ModelAggregate Model { get; set; }
 
-
-        public DeviceAggregate(int id, string name)
+        public DeviceAggregate(IDevice device)
         {
-            this.Id = id;
-            this.Name = name;
-            this.SlotsOnModel= new List<KeyValuePair<int, string>>();
+            this.Id = device.Id;
+            this.Name = device.Name;
+            this.IsAssembly = device.IsAssembly();
+            this.IsAssemblyPart = device.IsAssemblyPart();
+            this.ParentAssemblyId = device.GetParentAssemblyId();
+            this.ParentAssemblyName = device.GetParentAssemblyName();
+
+            this.Model = new(device);
+
+            
         }
+
+        public DeviceAggregate(IDevice device, ISlot slot) : this(device)
+        {
+            this.Model = new(device, slot);
+        }       
+        
     }
 }
+
